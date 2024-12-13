@@ -1,2 +1,0 @@
----@class FProfilerServicePing
-local FProfilerServicePing = {}

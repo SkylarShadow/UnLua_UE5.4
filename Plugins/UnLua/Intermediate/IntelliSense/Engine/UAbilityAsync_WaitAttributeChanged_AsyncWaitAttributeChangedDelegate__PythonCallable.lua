@@ -1,3 +1,0 @@
----@class UAbilityAsync_WaitAttributeChanged_AsyncWaitAttributeChangedDelegate__PythonCallable : UPythonCallableForDelegate
-local UAbilityAsync_WaitAttributeChanged_AsyncWaitAttributeChangedDelegate__PythonCallable = {}
-

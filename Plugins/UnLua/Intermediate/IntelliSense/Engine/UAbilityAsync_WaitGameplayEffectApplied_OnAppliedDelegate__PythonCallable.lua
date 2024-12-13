@@ -1,3 +1,0 @@
----@class UAbilityAsync_WaitGameplayEffectApplied_OnAppliedDelegate__PythonCallable : UPythonCallableForDelegate
-local UAbilityAsync_WaitGameplayEffectApplied_OnAppliedDelegate__PythonCallable = {}
-

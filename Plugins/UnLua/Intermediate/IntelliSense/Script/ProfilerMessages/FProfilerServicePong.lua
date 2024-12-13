@@ -1,2 +1,0 @@
----@class FProfilerServicePong
-local FProfilerServicePong = {}

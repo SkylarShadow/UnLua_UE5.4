@@ -1,2 +1,0 @@
----@class FNiagaraResolvedUserDataInterfaceBinding
-local FNiagaraResolvedUserDataInterfaceBinding = {}

@@ -1,2 +1,0 @@
----@class FPawnActionEvent
-local FPawnActionEvent = {}

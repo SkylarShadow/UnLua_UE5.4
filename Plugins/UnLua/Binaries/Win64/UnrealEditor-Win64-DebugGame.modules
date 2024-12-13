@@ -1,8 +1,0 @@
-{
-	"BuildId": "33043543",
-	"Modules": 
-	{
-		"UnLua": "UnrealEditor-UnLua-Win64-DebugGame.dll",
-		"UnLuaEditor": "UnrealEditor-UnLuaEditor-Win64-DebugGame.dll"
-	}
-}
