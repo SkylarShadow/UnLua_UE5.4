@@ -1,0 +1,12 @@
+---@class FRetargetProfile
+---@field public bApplyTargetRetargetPose boolean @If true, the TARGET Retarget Pose specified in this profile will be applied to the Retargeter (when plugged into the Retargeter).
+---@field public TargetRetargetPoseName string @Override the TARGET Retarget Pose to use when this profile is active. The pose must be present in the Retarget Asset and is not applied unless bApplyTargetRetargetPose is true.
+---@field public bApplySourceRetargetPose boolean @If true, the Source Retarget Pose specified in this profile will be applied to the Retargeter (when plugged into the Retargeter).
+---@field public SourceRetargetPoseName string @Override the SOURCE Retarget Pose to use when this profile is active. The pose must be present in the Retarget Asset and is not applied unless bApplySourceRetargetPose is true.
+---@field public bApplyChainSettings boolean @If true, the Chain Settings stored in this profile will be applied to the Retargeter (when plugged into the Retargeter).
+---@field public ChainSettings TMap<string, FTargetChainSettings> @A (potentially sparse) set of setting overrides for the target chains (only applied when bApplyChainSettings is true).
+---@field public bApplyRootSettings boolean @If true, the root settings stored in this profile will be applied to the Retargeter (when plugged into the Retargeter).
+---@field public RootSettings FTargetRootSettings @Retarget settings to control behavior of the retarget root motion (not applied unless bApplyRootSettings is true)
+---@field public bApplyGlobalSettings boolean @If true, the global settings stored in this profile will be applied to the Retargeter (when plugged into the Retargeter).
+---@field public GlobalSettings FRetargetGlobalSettings @Retarget settings to control global behavior, like Stride Warping (not applied unless bApplyGlobalSettings is true)
+local FRetargetProfile = {}

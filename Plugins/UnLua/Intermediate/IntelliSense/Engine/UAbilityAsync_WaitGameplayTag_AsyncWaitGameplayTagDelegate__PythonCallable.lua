@@ -1,0 +1,3 @@
+---@class UAbilityAsync_WaitGameplayTag_AsyncWaitGameplayTagDelegate__PythonCallable : UPythonCallableForDelegate
+local UAbilityAsync_WaitGameplayTag_AsyncWaitGameplayTagDelegate__PythonCallable = {}
+

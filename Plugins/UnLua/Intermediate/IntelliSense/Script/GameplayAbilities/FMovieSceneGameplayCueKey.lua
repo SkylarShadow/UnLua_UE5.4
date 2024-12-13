@@ -1,0 +1,13 @@
+---@class FMovieSceneGameplayCueKey
+---@field public Cue FGameplayCueTag
+---@field public Location FVector @Location cue took place at - relative to the attached component if applicable
+---@field public Normal FVector @Normal of impact that caused cue
+---@field public AttachSocketName string @When attached to a skeletal mesh component, specifies a socket to trigger the cue at
+---@field public NormalizedMagnitude number @Magnitude of source gameplay effect, normalzed from 0-1. Use this for "how strong is the gameplay effect" (0=min, 1=,max)
+---@field public Instigator FMovieSceneObjectBindingID @Instigator actor, the actor that owns the ability system component.
+---@field public EffectCauser FMovieSceneObjectBindingID @The physical actor that actually did the damage, can be a weapon or projectile
+---@field public PhysicalMaterial UPhysicalMaterial @PhysMat of the hit, if there was a hit.
+---@field public GameplayEffectLevel integer @The level of that GameplayEffect
+---@field public AbilityLevel integer @If originating from an ability, this will be the level of that ability
+---@field public bAttachToBinding boolean @Attach the gameplay cue to the track's bound object in sequencer
+local FMovieSceneGameplayCueKey = {}

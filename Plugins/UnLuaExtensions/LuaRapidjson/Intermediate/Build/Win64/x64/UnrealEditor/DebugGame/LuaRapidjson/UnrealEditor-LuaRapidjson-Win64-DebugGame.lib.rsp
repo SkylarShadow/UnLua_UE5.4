@@ -1,0 +1,16 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-LuaRapidjson-Win64-DebugGame.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\Projects\Program\UEProjects\JRPG\Intermediate\Build\Win64\x64\JRPGEditor\DebugGame\UnrealEd\SharedPCH.UnrealEd.Project.NonOptimized.ValApi.Cpp20.h.obj"
+"D:\Projects\Program\UEProjects\JRPG\Plugins\UnLuaExtensions\LuaRapidjson\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\LuaRapidjson\LuaRapidjsonModule.cpp.obj"
+"D:\Projects\Program\UEProjects\JRPG\Plugins\UnLuaExtensions\LuaRapidjson\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\LuaRapidjson\Document.cpp.obj"
+"D:\Projects\Program\UEProjects\JRPG\Plugins\UnLuaExtensions\LuaRapidjson\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\LuaRapidjson\rapidjson.cpp.obj"
+"D:\Projects\Program\UEProjects\JRPG\Plugins\UnLuaExtensions\LuaRapidjson\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\LuaRapidjson\Schema.cpp.obj"
+"D:\Projects\Program\UEProjects\JRPG\Plugins\UnLuaExtensions\LuaRapidjson\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\LuaRapidjson\values.cpp.obj"
+"D:\Projects\Program\UEProjects\JRPG\Plugins\UnLuaExtensions\LuaRapidjson\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\LuaRapidjson\Default.rc2.res"
+/OUT:"D:\Projects\Program\UEProjects\JRPG\Plugins\UnLuaExtensions\LuaRapidjson\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\LuaRapidjson\UnrealEditor-LuaRapidjson-Win64-DebugGame.lib"

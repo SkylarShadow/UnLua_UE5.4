@@ -1,0 +1,30 @@
+---@class FNetworkPhysicsSettingsPredictiveInterpolation
+---@field public bOverridePosCorrectionTimeBase boolean @np2.PredictiveInterpolation.PosCorrectionTimeBase
+---@field public PosCorrectionTimeBase number
+---@field public bOverridePosCorrectionTimeMin boolean @np2.PredictiveInterpolation.PosCorrectionTimeMin
+---@field public PosCorrectionTimeMin number
+---@field public bOverridePosCorrectionTimeMultiplier boolean @np2.PredictiveInterpolation.PosCorrectionTimeMultiplier
+---@field public PosCorrectionTimeMultiplier number
+---@field public bOverrideRotCorrectionTimeBase boolean @np2.PredictiveInterpolation.RotCorrectionTimeBase
+---@field public RotCorrectionTimeBase number
+---@field public bOverrideRotCorrectionTimeMin boolean @np2.PredictiveInterpolation.RotCorrectionTimeMin
+---@field public RotCorrectionTimeMin number
+---@field public bOverrideRotCorrectionTimeMultiplier boolean @np2.PredictiveInterpolation.RotCorrectionTimeMultiplier
+---@field public RotCorrectionTimeMultiplier number
+---@field public bOverridePosInterpolationTimeMultiplier boolean @np2.PredictiveInterpolation.InterpolationTimeMultiplier
+---@field public PosInterpolationTimeMultiplier number
+---@field public bOverrideRotInterpolationTimeMultiplier boolean @np2.PredictiveInterpolation.RotInterpolationTimeMultiplier
+---@field public RotInterpolationTimeMultiplier number
+---@field public bOverrideSoftSnapPosStrength boolean @np2.PredictiveInterpolation.SoftSnapPosStrength
+---@field public SoftSnapPosStrength number
+---@field public bOverrideSoftSnapRotStrength boolean @np2.PredictiveInterpolation.SoftSnapRotStrength
+---@field public SoftSnapRotStrength number
+---@field public bOverrideSoftSnapToSource boolean @np2.PredictiveInterpolation.SoftSnapToSource
+---@field public bSoftSnapToSource boolean
+---@field public bOverrideSkipVelocityRepOnPosEarlyOut boolean @np2.PredictiveInterpolation.SkipVelocityRepOnPosEarlyOut
+---@field public bSkipVelocityRepOnPosEarlyOut boolean
+---@field public bOverridePostResimWaitForUpdate boolean @np2.PredictiveInterpolation.PostResimWaitForUpdate
+---@field public bPostResimWaitForUpdate boolean
+---@field public bOverrideDisableSoftSnap boolean @np2.PredictiveInterpolation.DisableSoftSnap
+---@field public bDisableSoftSnap boolean
+local FNetworkPhysicsSettingsPredictiveInterpolation = {}

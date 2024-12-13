@@ -1,0 +1,11 @@
+---FGameplayModifierInfo
+---    Tells us "Who/What we" modify
+---    Does not tell us how exactly
+---@class FGameplayModifierInfo
+---@field public Attribute FGameplayAttribute @The Attribute we modify or the GE we modify modifies.
+---@field public ModifierOp integer @The numeric operation of this modifier: Override, Add, Multiply, etc
+---@field public ModifierMagnitude FGameplayEffectModifierMagnitude @Magnitude of the modifier
+---@field public EvaluationChannelSettings FGameplayModEvaluationChannelSettings @Evaluation channel settings of the modifier
+---@field public SourceTags FGameplayTagRequirements
+---@field public TargetTags FGameplayTagRequirements
+local FGameplayModifierInfo = {}

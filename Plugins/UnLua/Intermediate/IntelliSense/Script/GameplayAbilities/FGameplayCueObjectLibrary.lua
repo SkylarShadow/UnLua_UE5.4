@@ -1,0 +1,11 @@
+---An ObjectLibrary for the GameplayCue Notifies. Wraps 2 underlying UObjectLibraries plus options/delegates for how they are loaded
+---@class FGameplayCueObjectLibrary
+---@field public Paths TArray<string> @Paths to search for
+---@field public ActorObjectLibrary UObjectLibrary @Object library for actor based notifies
+---@field public StaticObjectLibrary UObjectLibrary @Object library for object based notifies
+---@field public CueSet UGameplayCueSet @Set to put the loaded asset data into. If null we will use the global set (RuntimeGameplayCueObjectLibrary.CueSet)
+---@field public bShouldSyncScan boolean @Should we force a sync scan on the asset registry in order to discover asset data, or just use what is there
+---@field public bShouldAsyncLoad boolean @Should we start async loading everything that we find (that passes ShouldLoad delegate check)
+---@field public bShouldSyncLoad boolean @Should we sync load everything that we find (that passes ShouldLoad delegate check)
+---@field public bHasBeenInitialized boolean @True if this has been initialized with correct data
+local FGameplayCueObjectLibrary = {}

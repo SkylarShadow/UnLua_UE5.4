@@ -1,0 +1,26 @@
+---@class UChaosVDEditorSettings : UObject
+---@field public bPlaybackAtRecordedFrameRate boolean @If true, playback will respect the recorded frame times
+---@field public TargetFrameRateOverride integer @If play at recorded frame rate is disabled, CVD will attempt to play the recording at the specified frame rate
+---@field public FarClippingOverride number @Sets the desired far clipping for CVD's viewport
+---@field public GlobalParticleDataVisualizationFlags integer @Set of flags to enable/disable visualization of specific particle data as debug draw
+---@field public GlobalCollisionDataVisualizationFlags integer @Set of flags to enable/disable visualization of specific collision data as debug draw
+---@field public GlobalSceneQueriesVisualizationFlags integer @Set of flags to enable/disable visualization of specific scene queries data as debug draw
+---@field public GlobalJointsDataVisualizationFlags integer @Set of flags to enable/disable visualization of specific scene queries data as debug draw
+---@field public bShowDebugText boolean @If true, text information (if available) will be drawn alongside any other debug draw shape
+---@field public ContactDebugDrawSettings FChaosVDContactDebugDrawSettings
+---@field public ParticleDataDebugDrawSettings FChaosParticleDataDebugDrawSettings
+---@field public JointsDataDebugDrawSettings FChaosVDJointsDebugDrawSettings
+---@field public ParticleColorMode EChaosVDParticleDebugColorMode
+---@field public ColorsByShapeType FChaosDebugDrawColorsByShapeType
+---@field public ColorsByParticleState FChaosDebugDrawColorsByState
+---@field public ColorsByClientServer FChaosDebugDrawColorsByClientServer
+---@field public TrackingTarget EChaosVDActorTrackingTarget @Sets what should be auto tracked by CVD's Camera
+---@field public ExpandViewTrackingBy number @By how much we should expand the bounding box used to track a target by bounding box. Used to see more of the screen while tracking in Bounding Box mode
+---@field public GeometryVisibilityFlags integer @Set of flags to enable/disable visibility of specific types of geometry/particles
+---@field public QueryOnlyMeshesMaterial TSoftObjectPtr<UMaterial>
+---@field public SimOnlyMeshesMaterial TSoftObjectPtr<UMaterial>
+---@field public InstancedMeshesMaterial TSoftObjectPtr<UMaterial>
+---@field public InstancedMeshesQueryOnlyMaterial TSoftObjectPtr<UMaterial>
+---@field public SkySphereActorClass FSoftClassPath
+local UChaosVDEditorSettings = {}
+

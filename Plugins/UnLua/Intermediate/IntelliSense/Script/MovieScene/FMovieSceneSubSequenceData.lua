@@ -1,0 +1,23 @@
+---Sub sequence data that is stored within an evaluation template as a backreference to the originating sequence, and section
+---@class FMovieSceneSubSequenceData
+---@field public Sequence FSoftObjectPath @The sequence that the sub section references
+---@field public OuterToInnerTransform FMovieSceneSequenceTransform @The transform from this sub sequence's parent to its own play space.
+---@field public RootToSequenceTransform FMovieSceneSequenceTransform @Transform that transforms a given time from the sequences outer space, to its authored space.
+---@field public TickResolution FFrameRate @The tick resolution of the inner sequence.
+---@field public DeterministicSequenceID FMovieSceneSequenceID @This sequence's deterministic sequence ID. Used in editor to reduce the risk of collisions on recompilation.
+---@field public ParentPlayRange FMovieSceneFrameRange @The play range of the parent section
+---@field public ParentStartFrameOffset FFrameNumber @The start frame offset of the parent section
+---@field public ParentEndFrameOffset FFrameNumber @The end frame offset of the parent section
+---@field public ParentFirstLoopStartFrameOffset FFrameNumber @The offset for the first loop of the sub-sequence
+---@field public bCanLoop boolean @Whether this sub-sequence can loop
+---@field public PlayRange FMovieSceneFrameRange @This sub sequence's playback range according to its parent sub section. Clamped recursively during template generation
+---@field public FullPlayRange FMovieSceneFrameRange @The sub-sequence's full playback range, in its own local time space.
+---@field public UnwarpedPlayRange FMovieSceneFrameRange @The play range of the parent section, without any warping involved. That means that, for a sub-sequence playing with an initial offset of 50 and looping 3 times, this play range will start 50 frames after PlayRange's lower bound, and extend much past PlayRange's upper bound (3 times longer).
+---@field public PreRollRange FMovieSceneFrameRange @The sequence preroll range considering the start offset
+---@field public PostRollRange FMovieSceneFrameRange @The sequence postroll range considering the start offset
+---@field public HierarchicalBias integer @The accumulated hierarchical bias of this sequence. Higher bias will take precedence
+---@field public AccumulatedFlags EMovieSceneSubSectionFlags @Flags accumulated from parent->child for each sub-section that led to the inclusion of this sub-sequence
+---@field public InstanceData FMovieSceneSequenceInstanceDataPtr @Instance data that should be used for any tracks contained immediately within this sub sequence
+---@field public SectionPath string @This sequence's path within its movie scene
+---@field private SubSectionSignature FGuid @The sub section's signature at the time this structure was populated.
+local FMovieSceneSubSequenceData = {}

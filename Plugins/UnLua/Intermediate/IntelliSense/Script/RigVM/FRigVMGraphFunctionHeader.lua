@@ -1,0 +1,12 @@
+---@class FRigVMGraphFunctionHeader
+---@field public LibraryPointer FRigVMGraphFunctionIdentifier
+---@field public Name string
+---@field public NodeTitle string
+---@field public NodeColor FLinearColor
+---@field public Description string
+---@field public Category string
+---@field public Keywords string
+---@field public Arguments TArray<FRigVMGraphFunctionArgument>
+---@field public Dependencies TMap<FRigVMGraphFunctionIdentifier, integer>
+---@field public ExternalVariables TArray<FRigVMExternalVariable>
+local FRigVMGraphFunctionHeader = {}

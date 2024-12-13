@@ -1,0 +1,12 @@
+---Gameplay Effects Data needs to be versioned (e.g. going from Monolithic to Modular)
+---Unfortunately, the Custom Package Versioning doesn't work for this case, because we're upgrading
+---outside of the Serialize function.  For that reason we want to store a UProperty that says what version
+---we're on.  Unfortunately that propagates from Parent to Child (inheritance rules) so to overcome that,
+---we have a special UStruct that always serializes its data (so it will always be loaded, not inherited).
+---Here is how to do that:
+---    1. Return false in Identical (which effectively disables delta serialization).
+--- 2. Reset the value in PostInitProperties, thereby not using the inherited value on the initial preload.
+--- 3. Ensure the CurrentVersion field isn't marked up as a UPROPERTY to avoid automatic copying between parent/child.
+--- 4. Implement Serialize to ensure the CurrentVersion is still serialized.
+---@class FGameplayEffectVersion
+local FGameplayEffectVersion = {}

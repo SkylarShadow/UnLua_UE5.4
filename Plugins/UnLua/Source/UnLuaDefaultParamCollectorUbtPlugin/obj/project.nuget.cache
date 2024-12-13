@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "R2/lCIKb1U4=",
+  "success": true,
+  "projectFilePath": "D:\\Projects\\Program\\UEProjects\\JRPG\\Plugins\\UnLua\\Source\\UnLuaDefaultParamCollectorUbtPlugin\\UnLuaDefaultParamCollectorUbtPlugin.ubtplugin.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\85142\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\85142\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.32\\microsoft.windowsdesktop.app.ref.6.0.32.nupkg.sha512",
+    "C:\\Users\\85142\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.32\\microsoft.netcore.app.ref.6.0.32.nupkg.sha512",
+    "C:\\Users\\85142\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.32\\microsoft.aspnetcore.app.ref.6.0.32.nupkg.sha512"
+  ],
+  "logs": []
+}

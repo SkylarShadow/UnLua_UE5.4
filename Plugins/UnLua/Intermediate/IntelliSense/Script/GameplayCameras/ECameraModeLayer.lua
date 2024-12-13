@@ -1,0 +1,11 @@
+---Defines evaluation layers for camera modes.
+---@class ECameraModeLayer
+---@field public Base integer
+---@field public Main integer
+---@field public Global integer
+---@field public Visual integer
+---@field public User0 integer
+---@field public User1 integer
+---@field public User2 integer
+---@field public ECameraModeLayer_MAX integer
+local ECameraModeLayer = {}

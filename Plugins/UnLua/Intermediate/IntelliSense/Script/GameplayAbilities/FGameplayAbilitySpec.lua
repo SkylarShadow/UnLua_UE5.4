@@ -1,0 +1,19 @@
+---An activatable ability spec, hosted on the ability system component. This defines both what the ability is (what class, what level, input binding etc)
+---and also holds runtime state that must be kept outside of the ability being instanced/activated.
+---@class FGameplayAbilitySpec : FFastArraySerializerItem
+---@field public Handle FGameplayAbilitySpecHandle @Handle for outside sources to refer to this spec by
+---@field public Ability UGameplayAbility @Ability of the spec (Always the CDO. This should be const but too many things modify it currently)
+---@field public Level integer @Level of Ability
+---@field public InputID integer @InputID, if bound
+---@field public SourceObject TWeakObjectPtr<UObject> @Object this ability was created from, can be an actor or static object. Useful to bind an ability to a gameplay object
+---@field public ActiveCount integer @A count of the number of times this ability has been activated minus the number of times it has been ended. For instanced abilities this will be the number of currently active instances. Can't replicate until prediction accurately handles this.
+---@field public InputPressed boolean @Is input currently pressed. Set to false when input is released
+---@field public RemoveAfterActivation boolean @If true, this ability should be removed as soon as it finishes executing
+---@field public PendingRemove boolean @Pending removal due to scope lock
+---@field public bActivateOnce boolean @This ability should be activated once when it is granted.
+---@field public ActivationInfo FGameplayAbilityActivationInfo @Activation state of this ability. This is not replicated since it needs to be overwritten locally on clients during prediction.
+---@field public DynamicAbilityTags FGameplayTagContainer @Optional ability tags that are replicated.  These tags are also captured as source tags by applied gameplay effects.
+---@field public NonReplicatedInstances TArray<UGameplayAbility> @Non replicating instances of this ability.
+---@field public ReplicatedInstances TArray<UGameplayAbility> @Replicated instances of this ability..
+---@field public GameplayEffectHandle FActiveGameplayEffectHandle @Handle to GE that granted us (usually invalid). FActiveGameplayEffectHandles are not synced across the network and this is valid only on Authority. If you need FGameplayAbilitySpec -> FActiveGameplayEffectHandle, then use AbilitySystemComponent::FindActiveGameplayEffectHandle.
+local FGameplayAbilitySpec = {}

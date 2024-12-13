@@ -1,0 +1,12 @@
+---@class FPIEPreviewDeviceSpecifications
+---@field public DevicePlatform EPIEPreviewDeviceType
+---@field public ResolutionX integer
+---@field public ResolutionY integer
+---@field public ResolutionYImmersiveMode integer
+---@field public PPI integer
+---@field public ScaleFactors TArray<number>
+---@field public BezelProperties FPIEBezelProperties
+---@field public AndroidProperties FPIEAndroidDeviceProperties
+---@field public IOSProperties FPIEIOSDeviceProperties
+---@field public SwitchProperties FPIESwitchDeviceProperties
+local FPIEPreviewDeviceSpecifications = {}

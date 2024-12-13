@@ -1,0 +1,12 @@
+---Test structure for properties of various built-in types.
+---@class FStructSerializerBuiltinTestStruct
+---@field public Guid FGuid
+---@field public Name string
+---@field public String string
+---@field public Text string
+---@field public Vector FVector @UPROPERTY() FTimespan Timespan;
+---@field public Vector4 FVector4
+---@field public Rotator FRotator
+---@field public Quat FQuat
+---@field public Color FColor
+local FStructSerializerBuiltinTestStruct = {}

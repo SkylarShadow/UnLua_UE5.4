@@ -1,0 +1,11 @@
+---Every set condition within this query must match in order for the query to match. i.e. individual query elements are ANDed together.
+---@class FGameplayEffectQuery
+---@field public CustomMatchDelegate_BP Delegate @BP-exposed delegate for providing custom matching conditions.
+---@field public OwningTagQuery FGameplayTagQuery @Query that is matched against tags this GE gives
+---@field public EffectTagQuery FGameplayTagQuery @Query that is matched against tags this GE has
+---@field public SourceTagQuery FGameplayTagQuery @Query that is matched against spec tags the source of this GE has
+---@field public SourceAggregateTagQuery FGameplayTagQuery @Query that is matched against all tags the source of this GE has
+---@field public ModifyingAttribute FGameplayAttribute @Matches on GameplayEffects which modify given attribute.
+---@field public EffectSource UObject @Matches on GameplayEffects which come from this source
+---@field public EffectDefinition TSubclassOf<UGameplayEffect> @Matches on GameplayEffects with this definition
+local FGameplayEffectQuery = {}

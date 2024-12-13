@@ -1,0 +1,13 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\projects\\program\\ueprojects\\jrpg\\plugins\\unlua\\source\\unlua\\private\\baselib\\lualib_text.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\projects\\program\\ueprojects\\jrpg\\intermediate\\build\\win64\\x64\\jrpgeditor\\debuggame\\unrealed\\sharedpch.unrealed.project.nonoptimized.valapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\projects\\program\\ueprojects\\jrpg\\plugins\\unlua\\intermediate\\build\\win64\\x64\\unrealeditor\\debuggame\\unlua\\definitions.unlua.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

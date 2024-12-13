@@ -1,0 +1,20 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\projects\\program\\ueprojects\\jrpg\\plugins\\unlua\\source\\unluaeditor\\private\\unluaaboutscreen.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\projects\\program\\ueprojects\\jrpg\\intermediate\\build\\win64\\x64\\jrpgeditor\\debuggame\\unrealed\\sharedpch.unrealed.project.nonoptimized.valapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\projects\\program\\ueprojects\\jrpg\\plugins\\unlua\\intermediate\\build\\win64\\x64\\unrealeditor\\debuggame\\unluaeditor\\definitions.unluaeditor.h",
+            "d:\\projects\\program\\ueprojects\\jrpg\\plugins\\unlua\\source\\unluaeditor\\private\\unluaaboutscreen.h",
+            "e:\\ue_5.4\\engine\\source\\runtime\\core\\public\\misc\\engineversioncomparison.h",
+            "e:\\ue_5.4\\engine\\source\\editor\\editorstyle\\public\\editorstyleset.h",
+            "d:\\projects\\program\\ueprojects\\jrpg\\plugins\\unlua\\source\\unluaeditor\\private\\unluaeditorfunctionlibrary.h",
+            "e:\\ue_5.4\\engine\\source\\developer\\directorywatcher\\public\\idirectorywatcher.h",
+            "d:\\projects\\program\\ueprojects\\jrpg\\plugins\\unlua\\intermediate\\build\\win64\\unrealeditor\\inc\\unluaeditor\\uht\\unluaeditorfunctionlibrary.generated.h",
+            "d:\\projects\\program\\ueprojects\\jrpg\\plugins\\unlua\\source\\unluaeditor\\private\\unluaeditorstyle.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

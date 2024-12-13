@@ -1,0 +1,12 @@
+---@class FTargetRootSettings
+---@field public RotationAlpha number @Range 0 to 1. Default 1. Blends the amount of retargeted root rotation to apply. At 0 the root is left at the rotation from the retarget pose. At 1 the root is rotated fully to match the source root rotation.
+---@field public TranslationAlpha number @Range 0 to 1. Default 1. Blends the amount of retargeted root translation to apply. At 0 the root is left at the position from the retarget pose. At 1 the root will follow the source motion according to the behavior defined in the subsequent settings.
+---@field public BlendToSource number @Range 0 to 1. Default 0. Blends the retarget root's translation to the exact source location. At 0 the root is placed at the retargeted location. At 1 the root is placed at the location of the source's retarget root bone.
+---@field public BlendToSourceWeights FVector @Per-axis weights for the Blend to Source.
+---@field public ScaleHorizontal number @Default 1. Scales the motion of the root position in the horizontal plane (X,Y).
+---@field public ScaleVertical number @Default 1. Scales the motion of the root position in the vertical direction (Z).
+---@field public TranslationOffset FVector @Applies a static component-space translation offset to the retarget root.
+---@field public RotationOffset FRotator @Applies a static local-space rotation offset to the retarget root.
+---@field public AffectIKHorizontal number @Range 0 to 1. Default 1. Control whether modifications made to the root will affect the horizontal component of IK positions. At 0 the IK positions are independent of the root modifications. At 1 the IK positions are calculated relative to the modified root location.
+---@field public AffectIKVertical number @Range 0 to 1. Default 0. Control whether modifications made to the root will affect the vertical component of IK positions. At 0 the IK positions are independent of the root modifications. At 1 the IK positions are calculated relative to the modified root location.
+local FTargetRootSettings = {}

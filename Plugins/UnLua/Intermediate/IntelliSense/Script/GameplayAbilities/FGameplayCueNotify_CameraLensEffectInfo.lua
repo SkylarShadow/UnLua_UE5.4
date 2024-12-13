@@ -1,0 +1,12 @@
+---FGameplayCueNotify_CameraLensEffectInfo
+---    Properties that specify how to play a camera lens effect.
+---@class FGameplayCueNotify_CameraLensEffectInfo
+---@field public SpawnConditionOverride FGameplayCueNotify_SpawnCondition @Condition to check before playing the camera lens effect.
+---@field public PlacementInfoOverride FGameplayCueNotify_PlacementInfo @Defines how the camera lens effect will be placed.
+---@field public CameraLensEffect TSubclassOf<AActor> @Camera lens effect to play.
+---@field public bOverrideSpawnCondition boolean @If enabled, use the spawn condition override and not the default one.
+---@field public bOverridePlacementInfo boolean @If enabled, use the placement info override and not the default one.
+---@field public bPlayInWorld boolean @If enabled, the camera lens effect will be played in the world and affect all players.
+---@field public WorldInnerRadius number @Players inside this radius get the full intensity camera lens effect.
+---@field public WorldOuterRadius number @Players outside this radius do not get the camera lens effect applied.
+local FGameplayCueNotify_CameraLensEffectInfo = {}

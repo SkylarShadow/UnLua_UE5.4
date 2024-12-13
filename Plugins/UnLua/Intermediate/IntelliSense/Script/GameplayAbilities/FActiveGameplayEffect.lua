@@ -1,0 +1,14 @@
+---Active GameplayEffect instance
+---    -What GameplayEffect Spec
+---    -Start time
+--- -When to execute next
+--- -Replication callbacks
+---@class FActiveGameplayEffect : FFastArraySerializerItem
+---@field public Spec FGameplayEffectSpec
+---@field public PredictionKey FPredictionKey
+---@field public GrantedAbilityHandles TArray<FGameplayAbilitySpecHandle> @Handles of Gameplay Abilities that were granted to the target by this Active Gameplay Effect
+---@field public StartServerWorldTime number @Server time this started
+---@field public CachedStartServerWorldTime number @Used for handling duration modifications being replicated
+---@field public StartWorldTime number
+---@field public bIsInhibited boolean @Not sure if this should replicate or not. If replicated, we may have trouble where IsInhibited doesn't appear to change when we do tag checks (because it was previously inhibited, but replication made it inhibited).
+local FActiveGameplayEffect = {}

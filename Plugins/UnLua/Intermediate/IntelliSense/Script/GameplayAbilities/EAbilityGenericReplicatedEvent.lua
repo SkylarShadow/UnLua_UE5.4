@@ -1,0 +1,16 @@
+---These are generic, nonpayload carrying events that are replicated between the client and server
+---@class EAbilityGenericReplicatedEvent
+---@field public GenericConfirm integer
+---@field public GenericCancel integer
+---@field public InputPressed integer
+---@field public InputReleased integer
+---@field public GenericSignalFromClient integer
+---@field public GenericSignalFromServer integer
+---@field public GameCustom1 integer
+---@field public GameCustom2 integer
+---@field public GameCustom3 integer
+---@field public GameCustom4 integer
+---@field public GameCustom5 integer
+---@field public GameCustom6 integer
+---@field public MAX integer
+local EAbilityGenericReplicatedEvent = {}

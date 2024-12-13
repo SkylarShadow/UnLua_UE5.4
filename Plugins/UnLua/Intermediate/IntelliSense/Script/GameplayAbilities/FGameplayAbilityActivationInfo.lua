@@ -1,0 +1,11 @@
+---FGameplayAbilityActivationInfo
+---Data tied to a specific activation of an ability.
+---        -Tell us whether we are the authority, if we are predicting, confirmed, etc.
+---        -Holds current and previous PredictionKey
+---        -Generally not meant to be subclassed in projects.
+---        -Passed around by value since the struct is small.
+---@class FGameplayAbilityActivationInfo
+---@field public ActivationMode integer @Activation status of this ability
+---@field public bCanBeEndedByOtherInstance boolean @An ability that runs on multiple game instances can be canceled by a remote instance, but only if that remote instance has already confirmed starting it.
+---@field private PredictionKeyWhenActivated FPredictionKey @This was the prediction key used to activate this ability. It does not get updated if new prediction keys are generated over the course of the ability
+local FGameplayAbilityActivationInfo = {}
